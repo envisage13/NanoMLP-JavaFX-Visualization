@@ -9,7 +9,7 @@
 
 ## 📖 项目简介 (Introduction)
 
-本项目实现了一个**“神经网络内部状态实时监测仪”**。不同于传统的仅输出分类结果的 Demo，本项目致力于 **Explainable AI (XAI)** 的可视化研究。
+本项目实现了一个“神经网络内部状态实时监测仪”。不同于传统的仅输出分类结果的 Demo，本项目致力于 **Explainable AI (XAI)** 的可视化研究。
 
 系统采用 **双引擎架构**：
 1.  **Python 端**：训练一个极简的 NanoMLP (784 → 32 → 10) 并导出为包含中间层状态的 ONNX 模型。
@@ -39,9 +39,9 @@
 ```text
 spectrum-viz/
 ├── python_model/            # [Python] 模型训练与工具脚本
-│   ├── train_export.py      # 训练模型并导出兼容 Java 的 ONNX 文件
+│   ├── NanoMLP.py      # 训练模型并导出兼容 Java 的 ONNX 文件
 │   ├── save_images.py       # 从 MNIST 数据集提取 PNG 测试图片
-│   └── nano_mlp.onnx        # (生成产物) 预训练模型
+│   └── requirements.txt
 ├── src/
 │   ├── main/
 │   │   ├── java/com/nanomlp/
